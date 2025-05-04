@@ -6,6 +6,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white font-sans px-4 sm:px-6 py-10 sm:py-16">
       <div className="w-full max-w-5xl mx-auto text-center">
+      
+<div className="bg-red-500 p-4 text-white text-center rounded-lg mb-6">
+  🔥 Tailwind is finally working
+</div>
+
         <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight mb-6 drop-shadow">
           ⚙️ PromptForge
         </h1>
