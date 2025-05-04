@@ -1,33 +1,33 @@
-// PromptForge Landing Page - Enhanced Version
-// Modularized Components + Feature Extensions
+// PromptForge Landing Page - Enhanced + Responsive
+
+import './index.css'
 import PresetCard from './components/PresetCard'
 import PromptExportTools from './components/PromptExportTools'
 
-
 export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-center items-center px-6 py-12">
-      <div className="w-full max-w-4xl text-center">
-        <h1 className="text-5xl font-bold mb-6">⚙️ PromptForge</h1>
-        <p className="text-xl text-gray-400 mb-12">
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-center items-center px-4 sm:px-6 py-10 sm:py-16">
+      <div className="w-full max-w-5xl text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-6">⚙️ PromptForge</h1>
+        <p className="text-lg sm:text-xl text-gray-400 mb-10 sm:mb-12">
           Build the Brain. Shape the Soul. Create GPTs that slap.
         </p>
 
         <div className="py-[15px]">
           <a
             href="https://chatgpt.com/g/g-681772c36dc4819193e6be116c19e8d5-promptforge"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl text-2xl font-semibold shadow-xl transition mb-8"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-2xl text-lg sm:text-2xl font-semibold shadow-xl transition mb-10"
             target="_blank"
             rel="noreferrer"
           >
-            🚀 Click Here to Launch PromptForge
+            🚀 Launch PromptForge GPT
           </a>
         </div>
 
-        <hr className="border-zinc-700 mb-16" />
+        <hr className="border-zinc-700 mb-14 sm:mb-16" />
 
-        <h2 className="text-3xl font-bold mb-8">🔥 Example Presets</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">🔥 Example Presets</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <PresetCard
             title="💰 Brutal VC GPT"
             description="Savage startup advisor. High IQ, low patience."
@@ -57,15 +57,15 @@ export default function App() {
 
         <hr className="border-zinc-700 mt-20 mb-16" />
 
-        <h2 className="text-3xl font-bold mb-8">🛠 Export & Persona Tools</h2>
-        <PromptExportTools />
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">🛠 Export & Persona Tools</h2>
+        <div className="px-1 sm:px-0">
+          <PromptExportTools />
+        </div>
 
         <footer className="text-center text-gray-500 text-sm mt-16">
           &copy; {new Date().getFullYear()} Aftermath Technologies. Built for the builders.
         </footer>
       </div>
     </div>
-  );
+  )
 }
-
-
