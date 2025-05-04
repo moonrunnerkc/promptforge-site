@@ -1,7 +1,6 @@
 // PromptForge Landing Page - Enhanced Version
 // Modularized Components + Feature Extensions
 
-import './index.css'
 import PromptExportTools from './components/PromptExportTools'
 
 export default function App() {

@@ -1,7 +1,6 @@
 // PromptForge Landing Page - Enhanced Version
 // Modularized Components + Feature Extensions
 
-import './index.css'
 import PresetCard from './components/PresetCard'
 import PromptExportTools from './components/PromptExportTools'
 
