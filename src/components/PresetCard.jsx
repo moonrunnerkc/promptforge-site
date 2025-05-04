@@ -1,8 +1,6 @@
 // PromptForge Landing Page - Enhanced Version
 // Modularized Components + Feature Extensions
 
-import PromptExportTools from './components/PromptExportTools'
-
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-center items-center px-6 py-12">
