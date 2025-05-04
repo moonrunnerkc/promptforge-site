@@ -19,7 +19,7 @@ export default function App() {
           >
             🚀 Click Here to Launch PromptForge
           </a>
-        </div><div><br /></div>
+        </div>
 
         <hr className="border-zinc-700 mb-16" />
 
@@ -67,3 +67,4 @@ export default function App() {
     </div>
   );
 }
+
