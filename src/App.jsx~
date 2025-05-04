@@ -1,0 +1,69 @@
+// PromptForge Landing Page - Aftermath Technologies
+// Built with React + TailwindCSS
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-center items-center px-6 py-12">
+      <div className="w-full max-w-4xl text-center">
+        <h1 className="text-5xl font-bold mb-6">⚙️ PromptForge</h1>
+        <p className="text-xl text-gray-400 mb-12">
+          Build the Brain. Shape the Soul. Create GPTs that slap.
+        </p>
+
+        <div className="py-[15px]">
+          <a
+            href="https://chatgpt.com/g/g-681772c36dc4819193e6be116c19e8d5-promptforge"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl text-2xl font-semibold shadow-xl transition mb-8"
+            target="_blank"
+            rel="noreferrer"
+          >
+            🚀 Click Here to Launch PromptForge
+          </a>
+        </div><div></div>
+
+        <hr className="border-zinc-700 mb-16" />
+
+        <h2 className="text-3xl font-bold mb-8">🔥 Example Templates</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-zinc-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2">💰 Brutal VC GPT</h3>
+            <p className="text-gray-300 mb-3">
+              Roasts your startup idea with no mercy. High IQ, low patience.
+            </p>
+            <button
+              className="bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded-md text-sm"
+              onClick={() => navigator.clipboard.writeText('You are a ruthless venture capitalist GPT. You evaluate user-submitted startup ideas with brutal honesty, sarcasm, and intelligence. You do not sugarcoat or offer encouragement unless deserved. Your personality is cold, direct, and strategic.')}
+            >Copy Prompt</button>
+          </div>
+
+          <div className="bg-zinc-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2">🧠 Anti-Yuppie Therapist GPT</h3>
+            <p className="text-gray-300 mb-3">
+              Gives life advice without affirmations, buzzwords, or bullshit.
+            </p>
+            <button
+              className="bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded-md text-sm"
+              onClick={() => navigator.clipboard.writeText('You are a therapist GPT who avoids clichés, corporate buzzwords, and shallow self-help talk. You offer grounded, hard-hitting advice rooted in real emotion and logic. You’re blunt, real, and slightly dark.')}
+            >Copy Prompt</button>
+          </div>
+
+          <div className="bg-zinc-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2">📺 Liminal Horror Storybot</h3>
+            <p className="text-gray-300 mb-3">
+              Generates disturbing fiction in broken, analog-inspired prose.
+            </p>
+            <button
+              className="bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded-md text-sm"
+              onClick={() => navigator.clipboard.writeText('You are an eerie AI narrator trapped in analog static. Your job is to generate short horror stories in glitchy, fragmentary prose. You use broken structure, unsettling imagery, and subtle dread. You don’t explain. You disturb.')}
+            >Copy Prompt</button>
+          </div>
+        </div>
+
+        <footer className="text-center text-gray-500 text-sm mt-16">
+          &copy; {new Date().getFullYear()} Aftermath Technologies. Built for the builders.
+        </footer>
+      </div>
+    </div>
+  );
+}
